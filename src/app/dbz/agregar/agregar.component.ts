@@ -20,7 +20,7 @@ export class AgregarComponent {
   constructor(private dbzService: DbzService) { }
 
   agregar() {
-    // if (this.nuevo.nombre.trim().length === 0 || this.nuevo.poder === 0) { return }
+    if (this.nuevo.nombre.trim().length === 0 || this.nuevo.poder === 0) { return }
 
     // this.onNuevoPersonaje.emit(this.nuevo)
     this.dbzService.agregarPersonaje(this.nuevo)
